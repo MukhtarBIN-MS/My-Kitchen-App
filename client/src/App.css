@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+img{
+  width:400px;
+}
+.contain{
+  z-index:300;
+}
+

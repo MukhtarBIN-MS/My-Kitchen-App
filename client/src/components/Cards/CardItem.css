@@ -1,0 +1,134 @@
+.containerr{
+    max-width:1100px;
+      
+}
+.card h1{
+    display: none;
+}
+.field{
+    display: none;
+}
+.card{
+    z-index:0;
+    position: relative;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-gap:2rem;
+    background: bisque;
+    margin-bottom:2rem ;
+}
+.card>h3{
+    padding-left:10px;
+    font-family: 'oswald';
+    margin-top:0.5rem;
+    margin-left:10px;;
+    display: flex;
+    font-size:20px;
+    align-items: center;
+    justify-content: center;
+}
+.card>div {
+    padding: 2rem;
+    z-index: 0;
+}
+
+.card img{
+    padding-top: 4rem;
+    height:450px;
+    width:400px;
+    padding: 0 5rem;
+}
+.card:nth-child(even) img{
+    order:2;
+}
+@media(max-width:950px){
+    .card{
+        width:700px;
+    }
+    .card img{
+        width:300px;
+        height: 300px;
+    }
+}
+@media(max-width:600px){
+    .card{
+        display:block;
+        width:300px;
+        margin-left:60px;
+    }
+    .card img{
+        padding:0 0rem;
+        width:300px;
+        height:200px;
+        
+    }
+    .containerr .field{
+        display: none;
+    }
+    
+}
+@media(max-width:480px){
+    .card{
+        width:250px;
+        margin-left:30px;
+        
+    }
+    .card h1{
+        display:block;
+    }
+    .card img{
+        padding:0 0rem;
+        width:250px;
+        height: 200px;
+        
+    }
+    .card h3{
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: 'oswald';
+        margin-bottom:2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerr .field{
+        display: none;
+    }
+}
+@media(max-width:380px){
+  .card{
+      margin-left:0px;
+      
+  }
+  .card>h3{
+    font-size:15px;
+  }
+  .containerr .field{
+    display: none;
+}
+}
+@media(max-width:380px){
+    .card{
+        margin-left:-10px;
+        
+    }
+    .card>h3{
+      font-size:15px;
+    }
+    .containerr .field{
+      display: none;
+  }
+  }
+  @media(max-width:310px){
+    .card{
+        margin-left:-3npm0px;
+        
+    }
+    .card>h3{
+      font-size:15px;
+    }
+    .containerr .field{
+      display: none;
+  }
+  }
